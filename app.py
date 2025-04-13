@@ -12,7 +12,8 @@ app = Flask(__name__, static_folder='build', static_url_path='/')  # Set static 
 CORS(app)
 
 # Initialize grammar checker
-tool = language_tool_python.LanguageTool('en-US')
+tool = language_tool_python.LanguageToolPublicAPI('en-US')
+
 
 # Load model and vectorizer
 try:
