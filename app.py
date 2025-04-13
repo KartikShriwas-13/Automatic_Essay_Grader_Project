@@ -12,8 +12,8 @@ app = Flask(__name__, static_folder='build', static_url_path='/')  # Set static 
 CORS(app)
 
 # Initialize grammar checker
-# tool = language_tool_python.LanguageToolPublicAPI('en-US')
-tool = language_tool_python.LanguageTool('en-US', server_url='https://languagetool.org/api/v2')
+tool = language_tool_python.LanguageToolPublicAPI('en-US')
+
 
 
 
