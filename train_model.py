@@ -1,30 +1,3 @@
-# import pandas as pd
-# from sklearn.feature_extraction.text import TfidfVectorizer
-# from sklearn.ensemble import RandomForestRegressor  # or LinearRegression
-# import joblib
-
-# # Load the dataset
-# df = pd.read_csv("data/essay_llama3_8B_groq.csv")
-
-# # Optional: Use only first 5000 rows for faster training
-# df = df.head(5000)
-
-# # Features and labels
-# X_text = df["cleaned_text"]
-# y = df["score"]
-
-# # Vectorize
-# vectorizer = TfidfVectorizer(max_features=5000)
-# X = vectorizer.fit_transform(X_text)
-
-# # Train the model
-# model = RandomForestRegressor()
-# model.fit(X, y)
-
-# # Save the model and vectorizer
-# joblib.dump(model, "model.pkl")
-# joblib.dump(vectorizer, "vectorizer.pkl")
-# print("✅ Model and vectorizer saved successfully.")
 
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer

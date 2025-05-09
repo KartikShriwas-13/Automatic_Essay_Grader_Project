@@ -1,5 +1,3 @@
-
-
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import joblib
@@ -13,8 +11,6 @@ CORS(app)
 
 # Initialize grammar checker
 tool = language_tool_python.LanguageToolPublicAPI('en-US')
-
-
 
 
 # Load model and vectorizer
